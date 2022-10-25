@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANNOVER HELOWEEN PARTY 2022</title>
+    
+</head>
+<body>
+    
+    <div class='main'>
+        <img class='spider-web-frame' src="./img/spider_web_frame.png" alt="spider_web_frame">
+        <div class='ghosts'></div>
+        <h1 class='promo'>Hannover Helloween <br><span class='promo--year'>Party 2022</span></h2>
+        <div class='info'>
+            <p class='address'>
+                <a class='address--link' href='https://goo.gl/maps/me8tsKXaXzsnnccd7'> -> Seydlitzstrasse 32, Hannover 30161 <- </a>
+            </p>
+            <p class='time'>at 21:00</p>
+        </div>
+        <img class='pngwing pngwing_1' src="./img/pngwing.png" alt="pumpkins">
+        <img class='pngwing pngwing_2' src="./img/rip.png" alt="pumpkins">
+    </div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+    body {
+        font-family: 'Eater', cursive;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(150deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, rgb(238, 125, 41) 100%);
+    }
+    .main {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .spider-web-frame {
+        position: absolute;
+        width: 600px;
+        left: -16%;
+        top: -7%;
+        opacity: 0.4;
+        z-index: -1;
+
+    }
+    .ghosts {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-image: url('./img/ghost.gif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateX(-50%) translateY(-20%);
+        z-index: -1;
+    }
+    .promo {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(154, 154, 154);
+        margin-top: 80px;
+    }
+    .promo--year {
+        color: rgb(174, 44, 44);
+        font-family: 'Nosifer', cursive;
+    }
+    .info {
+        color: rgb(215, 215, 215);
+        font-size: 10px;
+        text-align: center;
+        margin-top: 25%;
+    }
+    .address{
+        font-size: 12px;
+    }
+    .address--link {
+        color: rgb(215, 215, 215);
+        text-decoration: none;
+    }
+    .time {
+        font-size: 20px;
+    }
+    .pngwing {
+        position: absolute;
+        bottom: 0;
+    }
+    .pngwing_1 {
+        width: 35vw;
+        left: 0;
+    }
+    .pngwing_2 {
+        width: 50vw;
+        right: 0;
+        transform: translateY(30%);
+    }
+
+    @media screen and (max-width: 767px) {
+        body {
+            background: linear-gradient(150deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 90%, rgb(238, 125, 41) 100%);
+        }
+        .spider-web-frame {
+            position: absolute;
+            width: 300px;
+            left: -20%;
+            top: -3%;
+        }
+        .ghosts {
+            top: 65%;
+            width: 80%;
+            transform: translateX(-50%) translateY(-10%);
+        }
+        .pngwing_1 {
+            width: 50vw;
+            left: 0;
+        }
+        .pngwing_2 {
+            width: 45vw;
+            right: 0;
+            transform: translateY(30%);
+        }
+        .info {
+            margin-top: 40%;
+        }
+    }
+
+</style>
+</body>
+</html>
